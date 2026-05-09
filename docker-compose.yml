@@ -1,0 +1,8 @@
+services:
+  builder:
+    build:
+      context: .
+    working_dir: /workdir
+    volumes:
+      - .:/workdir
+    user: "${UID}:${GID}"
